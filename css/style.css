@@ -1,0 +1,86 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+/* Home Page Styles */
+
+/* Hero section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #090d0e, #191e20);
+    color: #ffffff;
+    text-align: center;
+    padding: 5rem 2rem;
+    transition: background 0.5s ease;
+}
+
+.hero h1,
+.hero p {
+    color: #ffffff;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+/* fortypewriter effect */
+#typed-text {
+    border-right: 2px solid #000;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    max-width: 700px;
+}
+
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* navbar css */
+.navbar {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    /* Optional: Remove any shadow around the navbar */
+}
+
+.navbar a {
+    color: #fff !important;
+    /* Ensure the text color is visible */
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+    /* Change toggle button color to white for visibility */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    font-weight: bold;
+}
+
+/* content section */
+#content-teaser h2 {
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+#content-teaser p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}

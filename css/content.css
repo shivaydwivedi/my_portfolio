@@ -1,0 +1,119 @@
+/* General Reset */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    background-color: #f8f9fa;
+}
+
+/* Hero Section */
+.hero {
+    height: 35vh;
+    background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+.hero p {
+    max-width: 700px;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.cursor {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 3rem;
+    color: white;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+
+/* Section Headings */
+section h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Intro Paragraphs */
+section p {
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-weight: bold;
+    color: #222;
+}
+
+.card-text {
+    color: #666;
+}
+
+/* Buttons */
+.btn-outline-secondary,
+.btn-secondary {
+    border-radius: 30px;
+    padding: 8px 20px;
+    font-weight: 500;
+}
+
+.btn-outline-secondary:hover,
+.btn-secondary:hover {
+    opacity: 0.9;
+}
+
+/* Responsive Text Centering on Small Screens */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
