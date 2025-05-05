@@ -1,4 +1,5 @@
-const text = "Aspiring Backend Developer | Tech Blogger | YouTuber";
+const text = "Aspiring Backend Developer | Tech Blogger | YouTuber ";
+// 
 const typedText = document.getElementById("typed-text");
 
 let index = 0;
